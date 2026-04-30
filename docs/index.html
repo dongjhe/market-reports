@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>市場報告首頁</title>
+  <style>
+    body { font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; margin: 0; background: linear-gradient(180deg, #0d1526 0%, #121d35 100%); color: #eef4ff; }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 48px 20px 64px; }
+    .badge { display: inline-block; padding: 8px 14px; border-radius: 999px; background: rgba(143,208,255,.12); color: #8fd0ff; font-weight: 800; font-size: 13px; }
+    h1 { font-size: 42px; margin: 16px 0 12px; }
+    .intro { color: #a8b7d8; line-height: 1.9; max-width: 820px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 18px; margin-top: 30px; }
+    .card { background: #16233f; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; padding: 24px; box-shadow: 0 16px 32px rgba(0,0,0,.18); }
+    .card h2 { margin: 0 0 10px; font-size: 24px; }
+    .card p { margin: 0 0 14px; color: #9db0d5; line-height: 1.8; }
+    .card a { color: #8fd0ff; text-decoration: none; font-weight: 800; }
+    .small { margin-top: 34px; font-size: 13px; color: #7f91b6; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="badge">GitHub Pages 規劃版</div>
+    <h1>市場報告首頁</h1>
+    <p class="intro">這裡集中放每日市場晨報、庫存分析與每月 EPS 報告。之後只要把 HTML 放進對應資料夾，再推上 GitHub Pages，就能直接用網址查看歷史報告。</p>
+    <div class="grid">
+      <div class="card">
+        <h2>每日市場晨報</h2>
+        <p>收錄每日晨報 HTML，未來可持續累積歷史版本與新版版型。</p>
+        <a href="./morning-news/index.html">開啟晨報清單</a>
+      </div>
+      <div class="card">
+        <h2>庫存分析</h2>
+        <p>收錄台股、美股與合併復盤報告，方便之後逐步整理成分類入口。</p>
+        <a href="./portfolio/index.html">開啟庫存分析</a>
+      </div>
+      <div class="card">
+        <h2>每月金控 EPS</h2>
+        <p>收錄每月 EPS 追蹤報告，之後可再補上歷史清單與月份索引。</p>
+        <a href="./monthly-eps/index.html">開啟 EPS 報告</a>
+      </div>
+    </div>
+    <div class="small">建議 GitHub repository 名稱：market-reports</div>
+  </div>
+</body>
+</html>

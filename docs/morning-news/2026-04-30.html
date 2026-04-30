@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026-04-30｜每日市場晨報 完整版整合 v3</title>
+  <style>
+    :root {
+      --bg: #f7f2ea;
+      --bg-soft: #fffaf4;
+      --panel: #fffdf9;
+      --panel-2: #fff8ef;
+      --line: #e9dcc8;
+      --text: #2f2419;
+      --muted: #7c6a58;
+      --gold: #b88945;
+      --gold-soft: #f5e1c6;
+      --shadow: 0 14px 34px rgba(135, 108, 73, 0.12);
+      --shadow-soft: 0 10px 24px rgba(135, 108, 73, 0.08);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.8;
+      padding: 20px;
+    }
+    .wrap { max-width: 1240px; margin: 0 auto; }
+    .hero, .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 34px;
+      box-shadow: var(--shadow);
+      padding: 28px;
+      margin-bottom: 18px;
+    }
+    .title-badge, .mini-badge, .note-badge {
+      display: inline-block;
+      background: var(--gold-soft);
+      color: var(--gold);
+      font-weight: 800;
+      border-radius: 999px;
+    }
+    .title-badge { font-size: 14px; padding: 9px 16px; margin-bottom: 14px; }
+    .mini-badge { font-size: 13px; padding: 7px 12px; margin-bottom: 12px; }
+    .note-badge { font-size: 12px; padding: 6px 11px; margin-bottom: 12px; }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 4vw, 44px); line-height: 1.2; }
+    h2 { margin: 0 0 14px; font-size: 30px; line-height: 1.3; }
+    h3 { margin: 0 0 12px; font-size: 18px; line-height: 1.4; }
+    p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 22px; }
+    li { margin-bottom: 10px; }
+    .subtitle { color: var(--muted); font-size: 16px; margin-bottom: 20px; max-width: 980px; }
+    .summary-grid, .temp-grid, .dual-grid, .article-grid {
+      display: grid;
+      gap: 16px;
+    }
+    .summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 16px; }
+    .summary-card, .panel-card, .article-card, .temp-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow-soft);
+    }
+    .summary-card {
+      border-radius: 24px;
+      padding: 16px 18px;
+      min-height: 96px;
+    }
+    .summary-main { font-size: 18px; font-weight: 900; line-height: 1.35; margin-bottom: 6px; }
+    .summary-sub { color: var(--muted); font-size: 14px; line-height: 1.5; }
+    .chip-row { display: flex; flex-wrap: wrap; gap: 10px; }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 14px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: var(--bg-soft);
+      font-size: 14px;
+      font-weight: 700;
+    }
+    .temp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 8px; margin-bottom: 12px; }
+    .temp-card {
+      background: var(--panel-2);
+      border-radius: 24px;
+      padding: 14px 16px;
+      min-height: 108px;
+    }
+    .temp-label { color: var(--muted); font-size: 14px; font-weight: 700; margin-bottom: 6px; }
+    .temp-value { font-size: 28px; font-weight: 900; line-height: 1.1; margin-bottom: 6px; letter-spacing: -0.02em; }
+    .temp-change { font-size: 16px; font-weight: 900; color: var(--gold); line-height: 1.2; }
+    .dual-grid, .article-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .panel-card, .article-card {
+      border-radius: 28px;
+      padding: 22px;
+    }
+    .note { color: var(--muted); font-size: 15px; margin-top: 10px; }
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 8px;
+      font-size: 14px;
+    }
+    .table th, .table td {
+      text-align: left;
+      vertical-align: top;
+      padding: 10px 8px;
+      border-bottom: 1px solid var(--line);
+    }
+    .table th { color: var(--gold); font-weight: 800; }
+    .footer-note { text-align: center; color: var(--muted); font-size: 13px; margin-top: 12px; }
+    .strong { font-weight: 900; }
+    @media (max-width: 1024px) {
+      .summary-grid, .temp-grid, .dual-grid, .article-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 760px) {
+      body { padding: 12px; }
+      .hero, .section, .panel-card, .article-card, .temp-card, .summary-card { padding: 18px; border-radius: 22px; }
+      .summary-grid, .temp-grid, .dual-grid, .article-grid { grid-template-columns: 1fr; }
+      h2 { font-size: 24px; }
+      .temp-value { font-size: 32px; }
+      .temp-change { font-size: 18px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="title-badge">2026-04-30｜每日市場晨報</div>
+      <h1>美股盤前晨報｜正式預覽版</h1>
+      <p class="subtitle">這份先做成可直接確認的正式預覽版，已套用你目前要求的主要結構：前段板塊化、台股連動事件拆解、七巨頭股價註記，以及原先晨報正文骨架整合。</p>
+
+      <div class="summary-grid">
+        <div class="summary-card"><div class="summary-main">費半 -3.58%</div><div class="summary-sub">半導體壓力升高</div></div>
+        <div class="summary-card"><div class="summary-main">台指夜盤 -272</div><div class="summary-sub">收 39,461</div></div>
+        <div class="summary-card"><div class="summary-main">-45,869 口</div><div class="summary-sub">外資台指期淨空單</div></div>
+        <div class="summary-card"><div class="summary-main">系統風險 中</div><div class="summary-sub">估值驗證期，波動略升</div></div>
+      </div>
+
+      <div class="chip-row">
+        <div class="chip">主線：AI</div>
+        <div class="chip">盤勢：高檔分化</div>
+        <div class="chip">策略：先看財報與指引</div>
+        <div class="chip">風控：略升</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="title-badge">市場溫度儀表板</div>
+      <div class="temp-grid">
+        <div class="temp-card"><div class="temp-label">VIX 指數</div><div class="temp-value">17.83</div><div class="temp-change">-1.05%</div></div>
+        <div class="temp-card"><div class="temp-label">金價</div><div class="temp-value">4,608.00</div><div class="temp-change">-0.01%</div></div>
+        <div class="temp-card"><div class="temp-label">油價</div><div class="temp-value">100.13</div><div class="temp-change">+0.20%</div></div>
+      </div>
+      <p class="note">這區快速看市場避險情緒、能源壓力與風險偏好，定位改成輔助判讀模組，不搶主摘要與正文焦點。</p>
+    </section>
+
+    <section class="section">
+      <h2>台股開盤前，美股影響到的台灣產業新聞重點</h2>
+      <div class="dual-grid">
+        <div class="panel-card">
+          <div class="mini-badge">國際事件 → 產業鏈 → 台股族群</div>
+          <ul>
+            <li><span class="strong">OpenAI 擴大 AWS 合作</span> → AI 伺服器 / 交換器 / 光通訊 / 散熱 / PCB → 廣達、緯創、技嘉、台達電、奇鋐、雙鴻、金像電。</li>
+            <li><span class="strong">費半重挫，Nvidia 轉弱</span> → 半導體 / 先進封裝 / CoWoS / ABF / IC 設計 → 台積電、欣興、南電、景碩。</li>
+            <li><span class="strong">Amazon 推企業 AI 工具</span> → 雲端伺服器 / 資料中心電源 / 散熱 → 廣達、緯創、台達電、奇鋐、雙鴻。</li>
+          </ul>
+          <p class="note">這裡的可留意名單，來自事件對應的供應鏈 / 題材鏈邏輯，不是主觀隨意列股。</p>
+        </div>
+        <div class="panel-card">
+          <div class="mini-badge">延伸題材 → 產業鏈 → 台股族群</div>
+          <ul>
+            <li><span class="strong">Nvidia 新 GPU 與高階記憶體需求</span> → AI PC / 記憶體 / 板卡 / 筆電 / 散熱 → 華碩、微星、群聯、威剛、南亞科、奇鋐。</li>
+            <li><span class="strong">馬斯克 / OpenAI 訴訟與 AI 話語權競爭</span> → AI 伺服器 / 資料中心 / 電源 / 光模組 → 中磊、智邦、聯亞、上詮、華星光、台達電。</li>
+            <li><span class="strong">若半導體壓盤但伺服器、散熱、光通訊抗跌</span> → 主線內部換位 → 優先觀察抗跌的伺服器、散熱、網通與光通訊族群。</li>
+          </ul>
+          <p class="note">這區的重點不是亂撒名單，而是幫你看今天台股開盤前，哪些子產業比較可能承接美股主線外溢。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>美股七巨頭與 CEO 願景</h2>
+      <div class="note-badge">股價註記：以下收盤 / 盤後資訊，均以前一個美股交易日為準</div>
+      <div class="dual-grid">
+        <div class="panel-card">
+          <div class="mini-badge">七巨頭近況</div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>公司 / CEO</th>
+                <th>主看點</th>
+                <th>收盤 / 盤後</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Apple / Tim Cook</td><td>裝置生態、服務收入、裝置端 AI</td><td>待正式補入</td></tr>
+              <tr><td>Microsoft / Satya Nadella</td><td>Copilot、Azure、企業 AI 變現</td><td>待正式補入</td></tr>
+              <tr><td>Nvidia / Jensen Huang</td><td>算力、資料中心、主權 AI</td><td>待正式補入</td></tr>
+              <tr><td>Amazon / Andy Jassy</td><td>AWS、AI 代理工具、企業工作流</td><td>待正式補入</td></tr>
+              <tr><td>Alphabet / Sundar Pichai</td><td>搜尋、雲端、Gemini 商業化</td><td>待正式補入</td></tr>
+              <tr><td>Meta / Mark Zuckerberg</td><td>開源 AI、生態擴張、廣告效率</td><td>待正式補入</td></tr>
+              <tr><td>Tesla / Elon Musk</td><td>自駕、Robotaxi、Optimus</td><td>待正式補入</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="panel-card">
+          <div class="mini-badge">願景重點</div>
+          <p>七巨頭共同目標沒變，還是在搶 <span class="strong">AI 基礎設施、模型能力、裝置入口與企業客戶</span>。</p>
+          <p>但市場已經從單純買夢，轉成檢查這些願景能不能真的轉成 <span class="strong">訂單、毛利與資本支出效率</span>。</p>
+          <p class="note">所以這區的重點，不只是誰講了什麼，而是誰有能力把 AI 願景轉成實際獲利。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>最新財經新聞重點</h2>
+      <div class="article-grid">
+        <div class="article-card">
+          <h3>新聞焦點</h3>
+          <ul>
+            <li>以前一個美股交易日來看，美股漲跌互見，市場主因是大型科技股財報前觀望。</li>
+            <li>焦點集中在 AI 資本支出能否繼續支撐高估值。</li>
+            <li>中東航運風險暫未惡化，油價壓力短線稍有降溫。</li>
+          </ul>
+        </div>
+        <div class="article-card">
+          <h3>聯準會相關訊息</h3>
+          <p>聯準會目前對市場的角色，比較像壓抑高估值擴張速度，而不是直接改變 AI 主線方向。若後續通膨再升溫，估值壓力會先反映在科技股。</p>
+        </div>
+        <div class="article-card">
+          <h3>川普動向</h3>
+          <p>公開新聞顯示，川普對 Hormuz 航道維持開放的表述，帶動油市風險溢價回落，對市場偏中性偏正面。</p>
+        </div>
+        <div class="article-card">
+          <h3>馬斯克消息</h3>
+          <p>最新焦點偏向 OpenAI 訴訟與 SpaceX 治理結構，對大盤影響有限，Tesla 真正關鍵仍是交車、毛利與自駕進展。</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>市場解析</h2>
+      <div class="article-grid">
+        <div class="article-card"><h3>前一晚美股行情解析</h3><p>美股相關資訊以<span class="strong">前一個美股交易日</span>為口徑。昨夜盤勢屬高檔整理，不是全面轉空，但高估值科技股對負面訊號的敏感度正在上升。</p></div>
+        <div class="article-card"><h3>台指夜盤走勢解析</h3><p>夜盤偏弱，與美股高檔整理、科技財報前觀望情緒一致。若美股主線只是高位震盪，台股白天更可能出現指數穩、個股分化加劇的走法。</p></div>
+        <div class="article-card"><h3>影響因子拆解</h3><p>目前主要看三件事：財報能否撐住 AI 估值、聯準會是否繼續壓抑風險資產、油價是否重新抬升通膨壓力。</p></div>
+        <div class="article-card"><h3>是否有系統性風險</h3><p>目前判斷為<span class="strong">中</span>。原因是市場處在高估值區，AI 財報、聯準會、油價與地緣政治同時影響風險偏好，但目前較像高檔波動風險，不是流動性危機。</p></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>一句話市場主線結論</h2>
+      <p><span class="strong">AI 財報與聯準會同步進入驗證期，市場高檔分化，短線應先看財報與指引，不宜盲目追價。</span></p>
+    </section>
+
+    <div class="footer-note">正式預覽版：已補入事件 → 產業鏈 → 台股族群邏輯，以及七巨頭股價口徑特別標註，供你確認整體結構與閱讀感。</div>
+  </div>
+</body>
+</html>
