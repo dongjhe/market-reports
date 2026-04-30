@@ -6,9 +6,11 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
   <meta http-equiv="Pragma" content="no-cache" />
   <meta http-equiv="Expires" content="0" />
-  <title>2026-04-30｜台積電(2330) 個股專頁</title>
+  <title>2026-04-30｜台積電(2330) 個股專頁 v1</title>
   <style>
-    :root { --bg:#f8f3ed; --bg-soft:#fdf9f4; --panel:#fffdfa; --panel-2:#fff8f1; --line:#efe4d5; --line-strong:#e6d7c4; --text:#2d241b; --muted:#7d6d5f; --gold:#b4874d; --gold-soft:#f7e7cf; --blue:#6f86d6; --blue-soft:#eef2ff; --green:#4f8b63; --red:#c15b5b; --shadow:0 10px 26px rgba(148,118,84,.08); --shadow-soft:0 6px 18px rgba(148,118,84,.05); }
+    :root {
+      --bg: #f8f3ed; --bg-soft: #fdf9f4; --panel: #fffdfa; --panel-2: #fff8f1; --line: #efe4d5; --line-strong: #e6d7c4; --text: #2d241b; --muted: #7d6d5f; --gold: #b4874d; --gold-soft: #f7e7cf; --blue: #6f86d6; --blue-soft: #eef2ff; --green: #4f8b63; --red: #c15b5b; --shadow: 0 10px 26px rgba(148, 118, 84, 0.08); --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
+    }
     * { box-sizing: border-box; }
     body { margin:0; background:radial-gradient(circle at top center, rgba(255,255,255,.92), transparent 30%), linear-gradient(180deg,var(--bg-soft) 0%,var(--bg) 100%); color:var(--text); font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.8; padding:18px; }
     .wrap { max-width:1240px; margin:0 auto; }
@@ -29,10 +31,13 @@
     .metric-label { color:var(--muted); font-size:13px; margin-bottom:8px; }
     .metric-value { font-size:26px; font-weight:900; color:var(--text); line-height:1.15; }
     .metric-sub { color:var(--muted); font-size:13px; margin-top:6px; }
+    .main { font-size:20px; font-weight:900; color:var(--text); }
+    .sub { font-size:14px; color:var(--muted); margin-top:6px; }
+    .callout { background:linear-gradient(180deg,#fffaf3 0%,#fff4e7 100%); border:1px solid var(--line-strong); border-radius:18px; padding:14px 16px; margin-top:14px; }
     table { width:100%; border-collapse:collapse; margin-top:8px; font-size:14px; }
     th, td { text-align:left; vertical-align:top; padding:12px 10px; border-bottom:1px solid var(--line-strong); }
     th { color:var(--gold); font-weight:800; background:rgba(180,135,77,.06); }
-    .callout { background:linear-gradient(180deg,#fffaf3 0%,#fff4e7 100%); border:1px solid var(--line-strong); border-radius:18px; padding:14px 16px; margin-top:14px; }
+    .up { color: var(--red); }
     .strong { color:var(--text); font-weight:900; }
     @media (max-width:980px) { .grid, .two-col, .compact-grid { grid-template-columns:1fr; } }
   </style>
@@ -50,17 +55,20 @@
         <div class="card"><div class="main">核心主線</div><div class="sub">AI、先進製程、高效能運算</div></div>
       </div>
     </section>
+
     <section class="section">
       <div class="two-col">
         <div class="card">
           <h2>一、基本資料卡</h2>
-          <table><tbody>
-            <tr><th>股票代號</th><td>2330</td></tr>
-            <tr><th>公司名稱</th><td>台積電</td></tr>
-            <tr><th>產業類型</th><td>半導體 / 晶圓代工</td></tr>
-            <tr><th>核心競爭優勢</th><td>先進製程、規模經濟、客戶黏著度與產能門檻</td></tr>
-            <tr><th>主要應用</th><td>AI 晶片、高效能運算、手機、車用、網通</td></tr>
-          </tbody></table>
+          <table>
+            <tbody>
+              <tr><th>股票代號</th><td>2330</td></tr>
+              <tr><th>公司名稱</th><td>台積電</td></tr>
+              <tr><th>產業類型</th><td>半導體 / 晶圓代工</td></tr>
+              <tr><th>核心競爭優勢</th><td>先進製程、規模經濟、客戶黏著度與產能門檻</td></tr>
+              <tr><th>主要應用</th><td>AI 晶片、高效能運算、手機、車用、網通</td></tr>
+            </tbody>
+          </table>
         </div>
         <div class="card">
           <h2>二、快速判讀</h2>
@@ -74,20 +82,44 @@
         </div>
       </div>
     </section>
+
     <section class="section">
       <h2>三、營收 / 財務重點摘要卡</h2>
       <div class="compact-grid">
-        <div class="compact-card"><div class="metric-label">最新單月營收</div><div class="metric-value">待補最新數據</div><div class="metric-sub">之後可接正式月營收資料</div></div>
-        <div class="compact-card"><div class="metric-label">核心成長引擎</div><div class="metric-value">AI</div><div class="metric-sub">先進製程與 HPC 需求是關鍵</div></div>
-        <div class="compact-card"><div class="metric-label">護城河</div><div class="metric-value">先進製程</div><div class="metric-sub">競爭門檻高，非一般代工可比</div></div>
-        <div class="compact-card"><div class="metric-label">主要風險</div><div class="metric-value">高預期</div><div class="metric-sub">若成長不如預期，修正也會快</div></div>
+        <div class="compact-card">
+          <div class="metric-label">最新單月營收</div>
+          <div class="metric-value">待補最新數據</div>
+          <div class="metric-sub">之後可接正式月營收資料</div>
+        </div>
+        <div class="compact-card">
+          <div class="metric-label">核心成長引擎</div>
+          <div class="metric-value">AI</div>
+          <div class="metric-sub">先進製程與 HPC 需求是關鍵</div>
+        </div>
+        <div class="compact-card">
+          <div class="metric-label">護城河</div>
+          <div class="metric-value">先進製程</div>
+          <div class="metric-sub">競爭門檻高，非一般代工可比</div>
+        </div>
+        <div class="compact-card">
+          <div class="metric-label">主要風險</div>
+          <div class="metric-value">高預期</div>
+          <div class="metric-sub">若成長不如預期，修正也會快</div>
+        </div>
       </div>
       <div class="callout"><strong>這區重點：</strong> 台積電真正要看的不是單月高低，而是 AI、HPC 與先進製程需求能不能持續撐住營收與獲利品質。</div>
     </section>
+
     <section class="section">
       <h2>四、營收與營運重點</h2>
       <table>
-        <thead><tr><th>項目</th><th>目前狀態</th><th>重點解讀</th></tr></thead>
+        <thead>
+          <tr>
+            <th>項目</th>
+            <th>目前狀態</th>
+            <th>重點解讀</th>
+          </tr>
+        </thead>
         <tbody>
           <tr><td>營收成長主線</td><td>AI / HPC</td><td>未來最重要的成長驅動來源是先進製程與高效能運算需求延續。</td></tr>
           <tr><td>毛利率</td><td>高水準結構優勢</td><td>台積電的強項不只是營收規模，而是高毛利率背後的先進製程能力。</td></tr>
@@ -97,6 +129,7 @@
         </tbody>
       </table>
     </section>
+
     <section class="section">
       <h2>五、值不值得現在追？</h2>
       <div class="card">
@@ -109,10 +142,16 @@
         <div class="callout"><strong>一句話：</strong> 公司夠強，但買點仍要挑，台積電適合用核心資產角度分批布局，不適合把它當成純情緒追價標的。</div>
       </div>
     </section>
+
     <section class="section">
       <h2>六、投資觀點</h2>
       <table>
-        <thead><tr><th>利多</th><th>風險</th></tr></thead>
+        <thead>
+          <tr>
+            <th>利多</th>
+            <th>風險</th>
+          </tr>
+        </thead>
         <tbody>
           <tr><td>全球先進製程龍頭，競爭門檻極高</td><td>市場預期高，若成長不如預期修正也快</td></tr>
           <tr><td>AI / HPC 長線需求明確</td><td>部分終端需求仍可能波動</td></tr>
@@ -120,6 +159,22 @@
           <tr><td>適合作為台股科技核心資產</td><td>若組合半導體過重，新增部位仍需控管節奏</td></tr>
         </tbody>
       </table>
+    </section>
+
+    <section class="section">
+      <h2>七、產業策略白皮書重點</h2>
+      <div class="card">
+        <h3>1. 基本面分析</h3>
+        <p>台積電的核心商業模式是晶圓代工，價值不只是代工本身，而是以先進製程、良率、規模經濟與客戶黏著度建立出幾乎無法短期複製的產業位置。它在全球半導體供應鏈裡，具備極高戰略地位。</p>
+        <h3>2. 財報解讀</h3>
+        <p>台積電的財報重點不只是營收成長，而是先進製程占比、毛利率、資本支出效率與 AI / HPC 成長是否延續。若這些一起往上，市場通常願意維持高評價。</p>
+        <h3>3. 產業趨勢</h3>
+        <p>AI、雲端、高效能運算、先進封裝與高階晶片需求，是台積電未來幾年的主要趨勢支撐。</p>
+        <h3>4. 未來潛力</h3>
+        <p>若 AI 需求延續且先進製程優勢未被挑戰，台積電仍有機會持續作為全球科技主線核心。</p>
+        <h3>5. 策略風險與挑戰</h3>
+        <p>風險主要來自市場預期過高、地緣政治、資本支出壓力，以及終端需求短線波動對評價的影響。</p>
+      </div>
     </section>
   </div>
 </body>
