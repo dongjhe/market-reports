@@ -8,27 +8,56 @@
   <meta http-equiv="Expires" content="0" />
   <title>2026-04-30｜華通(2313) 個股專頁</title>
   <style>
-    :root { --bg:#f8f3ed; --bg-soft:#fdf9f4; --panel:#fffdfa; --line:#efe4d5; --line-strong:#e6d7c4; --text:#2d241b; --muted:#7d6d5f; --gold:#b4874d; --gold-soft:#f7e7cf; --blue:#6f86d6; --blue-soft:#eef2ff; --green:#4f8b63; --red:#c15b5b; --shadow:0 10px 26px rgba(148,118,84,.08); --shadow-soft:0 6px 18px rgba(148,118,84,.05); }
-    *{box-sizing:border-box} body{margin:0;background:radial-gradient(circle at top center, rgba(255,255,255,.92), transparent 30%), linear-gradient(180deg,var(--bg-soft) 0%,var(--bg) 100%);color:var(--text);font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.8;padding:18px} .wrap{max-width:1240px;margin:0 auto}.hero,.section{background:linear-gradient(180deg,#fffdfa 0%,#fff8f1 100%);border:1px solid var(--line);border-radius:28px;box-shadow:var(--shadow);padding:26px;margin-bottom:18px}.badge,.mini-badge{display:inline-block;border-radius:999px;font-weight:800}.badge{background:var(--gold-soft);color:var(--gold);font-size:13px;padding:8px 14px;margin-bottom:14px}.mini-badge{background:var(--blue-soft);color:var(--blue);font-size:12px;padding:6px 10px;margin-bottom:10px}h1{margin:0 0 10px;font-size:clamp(30px,4vw,42px)}h2{margin:0 0 14px;font-size:28px}h3{margin:0 0 10px;font-size:18px}p,li{color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:18px}.two-col{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}.compact-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}.card,.compact-card{background:linear-gradient(180deg,#fffdfa 0%,#fff8f1 100%);border:1px solid var(--line-strong);border-radius:20px;box-shadow:var(--shadow-soft)}.card{padding:18px}.compact-card{padding:14px 16px;min-height:108px}.metric-label{color:var(--muted);font-size:13px;margin-bottom:8px}.metric-value{font-size:26px;font-weight:900;color:var(--text);line-height:1.15}.metric-sub{color:var(--muted);font-size:13px;margin-top:6px}.up{color:var(--red)}table{width:100%;border-collapse:collapse;margin-top:8px;font-size:14px}th,td{text-align:left;vertical-align:top;padding:12px 10px;border-bottom:1px solid var(--line-strong)}th{color:var(--gold);font-weight:800;background:rgba(180,135,77,.06)}.callout{background:linear-gradient(180deg,#fffaf3 0%,#fff4e7 100%);border:1px solid var(--line-strong);border-radius:18px;padding:14px 16px;margin-top:14px}.strong{color:var(--text);font-weight:900}@media (max-width:980px){.grid,.two-col,.compact-grid{grid-template-columns:1fr}}
+    :root { --bg:#f8f3ed; --bg-soft:#fdf9f4; --panel:#fffdfa; --panel-2:#fff8f1; --line:#efe4d5; --line-strong:#e6d7c4; --text:#2d241b; --muted:#7d6d5f; --gold:#b4874d; --gold-soft:#f7e7cf; --blue:#6f86d6; --blue-soft:#eef2ff; --green:#4f8b63; --red:#c15b5b; --shadow:0 10px 26px rgba(148,118,84,.08); --shadow-soft:0 6px 18px rgba(148,118,84,.05); }
+    * { box-sizing: border-box; }
+    body { margin:0; background:radial-gradient(circle at top center, rgba(255,255,255,.92), transparent 30%), linear-gradient(180deg,var(--bg-soft) 0%,var(--bg) 100%); color:var(--text); font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; line-height:1.8; padding:18px; }
+    .wrap { max-width:1240px; margin:0 auto; }
+    .hero, .section { background:linear-gradient(180deg,#fffdfa 0%,#fff8f1 100%); border:1px solid var(--line); border-radius:28px; box-shadow:var(--shadow); padding:26px; margin-bottom:18px; }
+    .badge, .mini-badge { display:inline-block; border-radius:999px; font-weight:800; }
+    .badge { background:var(--gold-soft); color:var(--gold); font-size:13px; padding:8px 14px; margin-bottom:14px; }
+    .mini-badge { background:var(--blue-soft); color:var(--blue); font-size:12px; padding:6px 10px; margin-bottom:10px; }
+    h1 { margin:0 0 10px; font-size:clamp(30px,4vw,42px); }
+    h2 { margin:0 0 14px; font-size:28px; }
+    h3 { margin:0 0 10px; font-size:18px; }
+    p, li { color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:14px; margin-top:18px; }
+    .two-col { display:grid; grid-template-columns:1.1fr .9fr; gap:16px; }
+    .compact-grid { display:grid; grid-template-columns:repeat(4, minmax(0,1fr)); gap:14px; }
+    .card, .compact-card { background:linear-gradient(180deg,#fffdfa 0%,#fff8f1 100%); border:1px solid var(--line-strong); border-radius:20px; box-shadow:var(--shadow-soft); }
+    .card { padding:18px; }
+    .compact-card { padding:14px 16px; min-height:108px; }
+    .metric-label { color:var(--muted); font-size:13px; margin-bottom:8px; }
+    .metric-value { font-size:26px; font-weight:900; color:var(--text); line-height:1.15; }
+    .up { color: var(--red); }
+    .down { color: var(--green); }
+    .metric-sub { color:var(--muted); font-size:13px; margin-top:6px; }
+    .main { font-size:20px; font-weight:900; color:var(--text); }
+    .sub { font-size:14px; color:var(--muted); margin-top:6px; }
+    .callout { background:linear-gradient(180deg,#fffaf3 0%,#fff4e7 100%); border:1px solid var(--line-strong); border-radius:18px; padding:14px 16px; margin-top:14px; }
+    table { width:100%; border-collapse:collapse; margin-top:8px; font-size:14px; }
+    th, td { text-align:left; vertical-align:top; padding:12px 10px; border-bottom:1px solid var(--line-strong); }
+    th { color:var(--gold); font-weight:800; background:rgba(180,135,77,.06); }
+    .strong { color:var(--text); font-weight:900; }
+    @media (max-width:980px) { .grid, .two-col, .compact-grid { grid-template-columns:1fr; } }
   </style>
 </head>
 <body>
   <div class="wrap">
     <section class="hero">
-      <div class="badge">2026-04-30｜個股專頁</div>
+      <div class="badge">2026-04-30｜個股專頁 v4</div>
       <h1>華通（2313）個股專頁</h1>
-      <p>這份頁面重點放在營收、財報、產業升級邏輯與投資判讀，定位是可直接從庫存分析頁點進來的個股專頁。</p>
+      <p>這版移除最新股價區塊，改把重心放回營收、財報、產業升級邏輯與投資判讀。也就是說，這頁現在更像「基本面 / 營收 / 結構」專頁，而不是市場行情頁。</p>
       <div class="grid">
-        <div class="card"><h3>股票代號</h3><p>2313</p></div>
-        <div class="card"><h3>公司名稱</h3><p>華通</p></div>
-        <div class="card"><h3>產業類型</h3><p>電子零組件 / PCB</p></div>
-        <div class="card"><h3>核心主線</h3><p>高階板、AI 伺服器、網通、衛星通訊</p></div>
+        <div class="card"><div class="main">股票代號</div><div class="sub">2313</div></div>
+        <div class="card"><div class="main">公司名稱</div><div class="sub">華通</div></div>
+        <div class="card"><div class="main">產業類型</div><div class="sub">電子零組件 / PCB</div></div>
+        <div class="card"><div class="main">核心主線</div><div class="sub">高階板、AI 伺服器、網通、衛星通訊</div></div>
       </div>
     </section>
     <section class="section">
       <div class="two-col">
         <div class="card">
-          <h2>基本資料卡</h2>
+          <h2>一、基本資料卡</h2>
           <table><tbody>
             <tr><th>股票代號</th><td>2313</td></tr>
             <tr><th>公司名稱</th><td>華通</td></tr>
@@ -38,25 +67,41 @@
           </tbody></table>
         </div>
         <div class="card">
-          <h2>快速判讀</h2>
+          <h2>二、快速判讀</h2>
           <div class="mini-badge">Quick View</div>
           <ul>
             <li>華通的投資價值，不在低價量產，而在高階應用滲透能否持續。</li>
             <li>AI 伺服器、網通與衛星通訊，是未來最值得觀察的結構升級主線。</li>
             <li>真正加分點不是題材，而是高階產品比重是否反映到毛利率與財報品質。</li>
+            <li>若財報不能證明升級成功，市場評價容易回到景氣循環股看法。</li>
           </ul>
         </div>
       </div>
     </section>
     <section class="section">
-      <h2>營收 / 財務重點摘要卡</h2>
+      <h2>三、營收 / 財務重點摘要卡</h2>
       <div class="compact-grid">
         <div class="compact-card"><div class="metric-label">最新單月營收</div><div class="metric-value">69.43 億</div><div class="metric-sub">115/03 月營收</div></div>
         <div class="compact-card"><div class="metric-label">月增率</div><div class="metric-value up">+33.49%</div><div class="metric-sub">相較上月明顯回升</div></div>
         <div class="compact-card"><div class="metric-label">年增率</div><div class="metric-value up">+11.12%</div><div class="metric-sub">維持年增，代表需求沒有斷</div></div>
         <div class="compact-card"><div class="metric-label">累計營收年增</div><div class="metric-value up">+16.85%</div><div class="metric-sub">115 年 Q1 累計營收 195.48 億</div></div>
       </div>
-      <div class="callout"><strong>重點：</strong> 最新可驗證營收資料顯示，單月營收、月增率、年增率與累計年增都維持正向。</div>
+      <div class="callout"><strong>這區重點：</strong> 華通最新可驗證營收資料顯示，單月營收、月增率、年增率與累計年增都維持正向。</div>
+    </section>
+    <section class="section">
+      <h2>四、營收與營運重點</h2>
+      <table>
+        <thead><tr><th>項目</th><th>最新數據 / 狀態</th><th>重點解讀</th></tr></thead>
+        <tbody>
+          <tr><td>115/03 單月營收</td><td>69.43 億元</td><td>單月營收回升幅度明顯，代表短線接單與出貨動能有轉強跡象。</td></tr>
+          <tr><td>月增率</td><td>+33.49%</td><td>相較前月明顯跳升，代表 3 月營運節奏比 2 月更強。</td></tr>
+          <tr><td>年增率</td><td>+11.12%</td><td>年增維持正值，代表需求至少還有延續。</td></tr>
+          <tr><td>115 年 Q1 累計營收</td><td>195.48 億元</td><td>市場後續更會看這些成長能不能轉進毛利率與獲利。</td></tr>
+          <tr><td>累計年增率</td><td>+16.85%</td><td>Q1 累計成長仍有延續性，對產業升級敘事是加分訊號。</td></tr>
+          <tr><td>營收結構關鍵</td><td>高階板 / AI 伺服器 / 網通</td><td>真正能讓市場重新評價的，是高附加價值產品比重能否持續拉升。</td></tr>
+        </tbody>
+      </table>
+      <p class="sub">資料依現有可驗證營收表整理，出表日期 115/04/17，資料年月 115/03。</p>
     </section>
   </div>
 </body>
