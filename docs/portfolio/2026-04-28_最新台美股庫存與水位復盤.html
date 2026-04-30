@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026-04-28｜最新台美股庫存與水位復盤</title>
+  <style>
+    :root {
+      --bg: #07101d;
+      --bg2: #0b1730;
+      --panel: rgba(15, 25, 49, 0.94);
+      --line: rgba(255,255,255,.08);
+      --text: #eef4ff;
+      --muted: #a3b2d0;
+      --gold: #ffd56b;
+      --blue: #7fd2ff;
+      --green: #4fd889;
+      --red: #ff7a7a;
+      --orange: #ffb86b;
+      --highlight: rgba(255, 213, 107, 0.16);
+      --highlight-blue: rgba(127, 210, 255, 0.14);
+      --shadow: 0 24px 60px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      color: var(--text);
+      line-height: 1.85;
+      background:
+        radial-gradient(circle at top left, rgba(127,210,255,.12), transparent 24%),
+        radial-gradient(circle at top right, rgba(255,213,107,.12), transparent 24%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      padding: 28px 16px 50px;
+    }
+    .wrap { max-width: 1100px; margin: 0 auto; }
+    .hero, .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .section { margin-top: 18px; }
+    .kicker {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 5vw, 44px); line-height: 1.15; }
+    h2 { margin: 0 0 14px; font-size: 24px; }
+    p { margin: 0 0 14px; }
+    ul, ol { margin: 8px 0 14px 20px; }
+    li { margin-bottom: 8px; }
+    .subtitle { color: var(--muted); margin: 0; max-width: 880px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px;
+    }
+    .label { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+    .value { font-size: 24px; font-weight: 900; }
+    .gold { color: var(--gold); }
+    .green { color: var(--green); }
+    .blue { color: var(--blue); }
+    .red { color: var(--red); }
+    .orange { color: var(--orange); }
+    .hl {
+      background: linear-gradient(180deg, transparent 20%, var(--highlight) 20%, var(--highlight) 88%, transparent 88%);
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    .hl-blue {
+      background: linear-gradient(180deg, transparent 20%, var(--highlight-blue) 20%, var(--highlight-blue) 88%, transparent 88%);
+      padding: 0 4px;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 12px;
+    }
+    th, td {
+      padding: 12px 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: top;
+    }
+    th {
+      color: var(--gold);
+      font-size: 13px;
+      text-transform: uppercase;
+      background: rgba(255,255,255,.03);
+    }
+    .callout {
+      margin-top: 12px;
+      background: linear-gradient(135deg, rgba(255,213,107,.14), rgba(127,210,255,.08));
+      border: 1px solid rgba(255,213,107,.25);
+      border-radius: 18px;
+      padding: 16px 18px;
+    }
+    .final {
+      font-size: 22px;
+      font-weight: 900;
+      color: var(--gold);
+    }
+    .foot {
+      margin-top: 18px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+    @media (max-width: 640px) {
+      body { padding: 16px 10px 36px; }
+      .hero, .section { padding: 18px; border-radius: 18px; }
+      h2 { font-size: 21px; }
+      .value { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="kicker">Portfolio Review</div>
+      <h1>2026-04-28｜最新台美股庫存與水位復盤</h1>
+      <p class="subtitle">本報告依你 2026-04-28 最新台美股庫存與總水位資料進行整體復盤。分析重點不只看漲跌，而是依照方舟邏輯，綜合水位、位階、主線濃度、核心與衛星結構，判斷目前配置是否健康，以及下一步該如何優化。</p>
+      <div class="grid">
+        <div class="card">
+          <div class="label">建議持股</div>
+          <div class="value gold">65.2%</div>
+        </div>
+        <div class="card">
+          <div class="label">目前持股</div>
+          <div class="value blue">20.19%</div>
+        </div>
+        <div class="card">
+          <div class="label">建議布局金額</div>
+          <div class="value green">TWD x</div>
+        </div>
+        <div class="card">
+          <div class="label">目前判斷</div>
+          <div class="value red">仍在低水位累積期</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>1. 先講總結</h2>
+      <p>你現在整體配置仍然非常低水位，還在標準累積期，而且最近的調整方向比前幾版更成熟，因為你有持續把資金往核心設備、核心權值與金融平衡靠。</p>
+      <p>但目前最大的問題仍然是，<span class="hl">美股高波動衛星比重升高，台股半導體主線仍偏集中</span>，所以後續要更明確讓核心成長速度快於衛星。</p>
+      <div class="callout"><strong>核心結論：</strong> 你現在的台美股組合仍然是低水位、可持續布局的健康狀態，但真正要做的不是全面加速，而是明確讓台股的 00920、2886、2881、0050，以及美股的 LRCX、AMAT、LIN、TSM、AVGO、NVDA 這些核心資產長得比 SATL、FLY、IONQ、TSLA、LITE 更快。</div>
+    </section>
+
+    <section class="section">
+      <h2>2. 最新總水位判讀</h2>
+      <ul>
+        <li><strong>建議持股：</strong>65.2%</li>
+        <li><strong>目前持股：</strong>20.19%</li>
+        <li><strong>現在持股（美元計價）：</strong>x</li>
+        <li><strong>資金總額：</strong>x</li>
+        <li><strong>建議持股（美元計價）：</strong>x</li>
+        <li><strong>建議布局金額：</strong>x</li>
+      </ul>
+      <p><span class="hl-blue">這不是普通低水位，而是很低的配置狀態。</span> 所以你現在的核心問題不是要不要先大調節，而是還有很大空間可以持續布局，但必須布局得更有效率。</p>
+    </section>
+
+    <section class="section">
+      <h2>3. 最新台股庫存整理</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>代號</th>
+            <th>名稱</th>
+            <th>股數</th>
+            <th>均價</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0050</td><td>元大台灣50</td><td>1,650</td><td>76.04</td></tr>
+          <tr><td>00910</td><td>第一金太空衛星</td><td>960</td><td>60.33</td></tr>
+          <tr><td>00920</td><td>富邦ESG綠色電力</td><td>290</td><td>25.6</td></tr>
+          <tr><td>00941</td><td>中信上游半導體</td><td>1,470</td><td>23.25</td></tr>
+          <tr><td>00988A</td><td>主動統一全球創新</td><td>570</td><td>16.42</td></tr>
+          <tr><td>1513</td><td>中興電</td><td>65</td><td>151.58</td></tr>
+          <tr><td>2313</td><td>華通</td><td>410</td><td>238.73</td></tr>
+          <tr><td>2330</td><td>台積電</td><td>20</td><td>1,850.7</td></tr>
+          <tr><td>2344</td><td>華邦電</td><td>4,000</td><td>102.55</td></tr>
+          <tr><td>2881</td><td>富邦金</td><td>130</td><td>88.14</td></tr>
+          <tr><td>2883</td><td>凱基金</td><td>15,000</td><td>10.97</td></tr>
+          <tr><td>2886</td><td>兆豐金</td><td>540</td><td>39.44</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>4. 最新美股庫存整理</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>代號</th>
+            <th>名稱</th>
+            <th>股數</th>
+            <th>均價</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>AMAT</td><td>應用材料</td><td>4.74</td><td>370.78</td></tr>
+          <tr><td>AVGO</td><td>博通</td><td>0.41</td><td>412.34</td></tr>
+          <tr><td>FLY</td><td>Firefly Aerospace</td><td>20</td><td>38.43</td></tr>
+          <tr><td>IONQ</td><td>IonQ</td><td>15</td><td>42.3</td></tr>
+          <tr><td>LIN</td><td>林德</td><td>0.2</td><td>490.4</td></tr>
+          <tr><td>LITE</td><td>Lumentum</td><td>0.34</td><td>816.65</td></tr>
+          <tr><td>LRCX</td><td>科林研發</td><td>4.4</td><td>262.31</td></tr>
+          <tr><td>NVDA</td><td>輝達</td><td>5.37</td><td>184.03</td></tr>
+          <tr><td>SATL</td><td>Satellogic</td><td>257</td><td>6.75</td></tr>
+          <tr><td>TSLA</td><td>特斯拉</td><td>6.59</td><td>397.68</td></tr>
+          <tr><td>TSM</td><td>台積電 ADR</td><td>1</td><td>322.76</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>5. 這版最大的進步</h2>
+      <ul>
+        <li><strong>核心設備鏈持續變厚：</strong>AMAT、LRCX、NVDA 都有繼續補強，代表你不是只往夢想題材衝，而是持續在補美股真正的核心主線。</li>
+        <li><strong>台股骨架仍然穩：</strong>0050、2330 作為核心底倉，搭配 2881、2883、2886 的金融平衡，讓台股配置比一般純科技組合健康很多。</li>
+        <li><strong>台股補平衡明確存在：</strong>00920 保留了結構平衡效果，不讓全部資金都擠進純半導體。</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>6. 這版最值得警覺的問題</h2>
+      <ul>
+        <li><strong>美股衛星重新變重：</strong>FLY、SATL、IONQ、TSLA、LITE 一起放大後，整個美股組合容易變成核心還在，但衛星體感太強。</li>
+        <li><strong>SATL 存在感太高：</strong>257 股雖不一定是最大金額，但它是典型小型題材高波動股，很容易放大心理波動。</li>
+        <li><strong>IONQ 又回來了：</strong>雖然部位不大，但提醒你美股性格仍偏高 Beta。</li>
+        <li><strong>台股半導體仍然偏集中：</strong>0050、2330、00941、2344、2313、00910、1513 讓主線集中度仍高。</li>
+      </ul>
+      <p>所以目前最重要的不是先問賣不賣，而是先問：<span class="hl">後面新增資金該明顯避開哪些高波動衛星，不要再放大它們的影響力</span>。</p>
+    </section>
+
+    <section class="section">
+      <h2>7. 依方舟邏輯，你現在的位置</h2>
+      <p>從風控來看，你現在的水位還很低，還沒到調節主導期；從位階來看，也不是全面高檔，仍有很多標的可以慢慢累積。</p>
+      <div class="callout"><strong>方舟翻譯：</strong> 目前更像不是先問要不要大調節，而是先問哪些部位後續不該再放大。也就是說，這版最重要的不是賣不賣，而是讓後面新增資金更明確往核心與平衡集中。</div>
+    </section>
+
+    <section class="section">
+      <h2>8. 後續布局優先順序</h2>
+      <h3 class="gold">台股優先補</h3>
+      <ol>
+        <li>00920｜富邦ESG綠色電力</li>
+        <li>2886｜兆豐金</li>
+        <li>2881｜富邦金</li>
+        <li>0050｜元大台灣50</li>
+      </ol>
+      <h3 class="blue">台股第二層</h3>
+      <ol start="5">
+        <li>1513｜中興電</li>
+        <li>00988A｜主動統一全球創新</li>
+      </ol>
+      <h3 class="red">台股先不要太積極再補</h3>
+      <ol start="7">
+        <li>00941｜中信上游半導體</li>
+        <li>2344｜華邦電</li>
+        <li>2313｜華通</li>
+        <li>2330｜台積電</li>
+        <li>00910｜第一金太空衛星</li>
+      </ol>
+      <h3 class="gold">美股優先補</h3>
+      <ol>
+        <li>LRCX｜科林研發</li>
+        <li>AMAT｜應用材料</li>
+        <li>LIN｜林德</li>
+        <li>TSM｜台積電 ADR</li>
+        <li>AVGO｜博通</li>
+        <li>NVDA｜輝達</li>
+      </ol>
+      <h3 class="red">美股先不要主動補</h3>
+      <ol start="7">
+        <li>SATL｜Satellogic</li>
+        <li>FLY｜Firefly Aerospace</li>
+        <li>IONQ｜IonQ</li>
+        <li>TSLA｜特斯拉</li>
+        <li>LITE｜Lumentum</li>
+      </ol>
+    </section>
+
+    <section class="section">
+      <h2>9. 最終復盤結論</h2>
+      <p class="final">你最近的加碼方向並沒有走偏，因為核心設備鏈與台股骨架仍在持續補強；但這版最大的警訊是，美股衛星股又重新變厚，所以若接下來新增資金沒有更明確往核心集中，你的組合波動感會再次被題材股主導。</p>
+    </section>
+
+    <div class="foot">報告日期：2026-04-28｜正式深色版｜輸出路徑：C:\Users\Tim08\.openclaw\workspace\Report</div>
+  </div>
+</body>
+</html>

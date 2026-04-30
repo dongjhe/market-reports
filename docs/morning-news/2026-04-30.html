@@ -6,30 +6,33 @@
   <title>2026-04-30｜每日市場晨報 完整版整合 v3</title>
   <style>
     :root {
-      --bg: #f7f2ea;
-      --bg-soft: #fffaf4;
-      --panel: #fffdf9;
-      --panel-2: #fff8ef;
-      --line: #e9dcc8;
-      --text: #2f2419;
-      --muted: #7c6a58;
-      --gold: #b88945;
-      --gold-soft: #f5e1c6;
-      --shadow: 0 14px 34px rgba(135, 108, 73, 0.12);
-      --shadow-soft: 0 10px 24px rgba(135, 108, 73, 0.08);
+      --bg: #f8f3ed;
+      --bg-soft: #fdf9f4;
+      --panel: #fffdfa;
+      --panel-2: #fffaf4;
+      --line: #efe4d5;
+      --line-strong: #e6d7c4;
+      --text: #2d241b;
+      --muted: #7d6d5f;
+      --gold: #b4874d;
+      --gold-soft: #f7e7cf;
+      --shadow: 0 10px 26px rgba(148, 118, 84, 0.08);
+      --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+      background:
+        radial-gradient(circle at top center, rgba(255,255,255,0.92), transparent 30%),
+        linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
       color: var(--text);
       font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
       line-height: 1.8;
-      padding: 20px;
+      padding: 18px;
     }
     .wrap { max-width: 1240px; margin: 0 auto; }
     .hero, .section {
-      background: var(--panel);
+      background: linear-gradient(180deg, rgba(255,253,250,0.98) 0%, rgba(255,250,244,0.96) 100%);
       border: 1px solid var(--line);
       border-radius: 34px;
       box-shadow: var(--shadow);
@@ -59,8 +62,8 @@
     }
     .summary-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); margin-bottom: 16px; }
     .summary-card, .panel-card, .article-card, .temp-card {
-      background: var(--panel);
-      border: 1px solid var(--line);
+      background: linear-gradient(180deg, #fffdfa 0%, #fff9f3 100%);
+      border: 1px solid var(--line-strong);
       box-shadow: var(--shadow-soft);
     }
     .summary-card {
@@ -75,15 +78,16 @@
       display: inline-flex;
       align-items: center;
       padding: 8px 14px;
-      border: 1px solid var(--line);
+      border: 1px solid var(--line-strong);
       border-radius: 999px;
-      background: var(--bg-soft);
+      background: linear-gradient(180deg, #fffdfa 0%, #fff6ec 100%);
       font-size: 14px;
       font-weight: 700;
+      box-shadow: 0 4px 10px rgba(148, 118, 84, 0.04);
     }
     .temp-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); margin-top: 8px; margin-bottom: 12px; }
     .temp-card {
-      background: var(--panel-2);
+      background: linear-gradient(180deg, #fffdfa 0%, #fff7ef 100%);
       border-radius: 24px;
       padding: 14px 16px;
       min-height: 108px;
@@ -107,7 +111,7 @@
       text-align: left;
       vertical-align: top;
       padding: 10px 8px;
-      border-bottom: 1px solid var(--line);
+      border-bottom: 1px solid var(--line-strong);
     }
     .table th { color: var(--gold); font-weight: 800; }
     .footer-note { text-align: center; color: var(--muted); font-size: 13px; margin-top: 12px; }

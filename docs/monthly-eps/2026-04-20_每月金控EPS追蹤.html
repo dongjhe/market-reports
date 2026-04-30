@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2026-04-20｜每月金控EPS追蹤</title>
+  <style>
+    :root {
+      --bg: #07101d;
+      --bg2: #0b1730;
+      --panel: rgba(15, 25, 49, 0.94);
+      --line: rgba(255,255,255,.08);
+      --text: #eef4ff;
+      --muted: #a3b2d0;
+      --gold: #ffd56b;
+      --blue: #7fd2ff;
+      --green: #4fd889;
+      --red: #ff7a7a;
+      --shadow: 0 24px 60px rgba(0,0,0,.35);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      color: var(--text);
+      line-height: 1.8;
+      background:
+        radial-gradient(circle at top left, rgba(127,210,255,.12), transparent 24%),
+        radial-gradient(circle at top right, rgba(255,213,107,.12), transparent 24%),
+        linear-gradient(180deg, var(--bg) 0%, var(--bg2) 100%);
+      padding: 28px 16px 50px;
+    }
+    .wrap { max-width: 1120px; margin: 0 auto; }
+    .hero, .section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      padding: 28px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .section { margin-top: 18px; }
+    .kicker {
+      display: inline-block;
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(30px, 5vw, 42px);
+      line-height: 1.15;
+    }
+    h2 {
+      margin: 0 0 14px;
+      font-size: 24px;
+    }
+    p { margin: 0 0 14px; }
+    ul { margin: 8px 0 14px 20px; }
+    li { margin-bottom: 8px; }
+    .subtitle, .meta, .small {
+      color: var(--muted);
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+    .card {
+      background: rgba(255,255,255,.04);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 18px;
+    }
+    .label { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
+    .value { font-size: 24px; font-weight: 900; }
+    .gold { color: var(--gold); }
+    .blue { color: var(--blue); }
+    .green { color: var(--green); }
+    .red { color: var(--red); }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      font-size: 14px;
+      margin-top: 12px;
+      overflow: hidden;
+      border-radius: 16px;
+    }
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 12px 10px;
+      vertical-align: top;
+      text-align: left;
+    }
+    th {
+      color: var(--gold);
+      background: rgba(255,255,255,.04);
+      font-weight: 800;
+    }
+    tr:nth-child(even) td {
+      background: rgba(255,255,255,.02);
+    }
+    .callout {
+      margin-top: 12px;
+      background: linear-gradient(135deg, rgba(255,213,107,.14), rgba(127,210,255,.08));
+      border: 1px solid rgba(255,213,107,.25);
+      border-radius: 18px;
+      padding: 16px 18px;
+    }
+    @media (max-width: 640px) {
+      body { padding: 16px 10px 36px; }
+      .hero, .section { padding: 18px; border-radius: 18px; }
+      h2 { font-size: 21px; }
+      .value { font-size: 22px; }
+      table { font-size: 13px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="kicker">Financial Holding EPS Tracker</div>
+      <h1>2026-04-20｜每月金控EPS追蹤</h1>
+      <p class="subtitle">依公開且可驗證資料整理台灣上市與上櫃金控公司最新 EPS。實際 EPS 採公司正式揭露資料，市場／法人預估 EPS 僅接受公開、可追溯且同口徑資料；若無法形成一致公開共識，依規則標示為「無一致公開預估」。</p>
+      <div class="grid">
+        <div class="card">
+          <div class="label">追蹤公司數</div>
+          <div class="value blue">13 家</div>
+        </div>
+        <div class="card">
+          <div class="label">最新實際 EPS 口徑</div>
+          <div class="value gold">114年 Q4 累計</div>
+        </div>
+        <div class="card">
+          <div class="label">預估 EPS 結果</div>
+          <div class="value red">無一致公開預估</div>
+        </div>
+        <div class="card">
+          <div class="label">查核時間</div>
+          <div class="value green">2026-04-20 22:10</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>資料說明</h2>
+      <ul class="meta">
+        <li>最新實際 EPS 來源採 TWSE OpenAPI「上市公司綜合損益表(金控業)」，截至 2026-04-20 可一致取得之最新正式數據為 114 年第 4 季累計，也就是 2025 全年基本每股盈餘。</li>
+        <li>市場／法人預估 EPS 僅接受公開、可追溯、且口徑一致之資料；本次查核後，未能對各家金控取得同口徑且一致的公開預估值，因此依任務規則統一標示為「無一致公開預估」。</li>
+        <li>截至查核日，公開交易金控股為 13 家，2887 已為台新新光金，未另列舊制新光金。</li>
+      </ul>
+      <div class="callout"><strong>結論重點：</strong> 本次可穩定交叉驗證的是各家金控最新正式公告實際 EPS；市場／法人預估因公開來源口徑不一致，因此未強行填入數字，以確保表格一致性與可追溯性。</div>
+    </section>
+
+    <section class="section">
+      <h2>金控 EPS 結構化整理</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>公司代號</th>
+            <th>公司名稱</th>
+            <th>最新實際EPS</th>
+            <th>市場／法人預估EPS</th>
+            <th>差異重點說明</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>2880</td><td>華南金</td><td>114年Q4累計 EPS 1.90 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2881</td><td>富邦金</td><td>114年Q4累計 EPS 8.37 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2882</td><td>國泰金</td><td>114年Q4累計 EPS 7.06 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2883</td><td>凱基金</td><td>114年Q4累計 EPS 1.74 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2884</td><td>玉山金</td><td>114年Q4累計 EPS 2.12 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2885</td><td>元大金</td><td>114年Q4累計 EPS 2.74 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2886</td><td>兆豐金</td><td>114年Q4累計 EPS 2.36 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2887</td><td>台新新光金</td><td>114年Q4累計 EPS 1.91 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2889</td><td>國票金</td><td>114年Q4累計 EPS 0.63 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2890</td><td>永豐金</td><td>114年Q4累計 EPS 1.97 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2891</td><td>中信金</td><td>114年Q4累計 EPS 4.08 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>2892</td><td>第一金</td><td>114年Q4累計 EPS 1.87 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+          <tr><td>5880</td><td>合庫金</td><td>114年Q4累計 EPS 1.36 元</td><td>無一致公開預估</td><td>公開可交叉驗證之同口徑法人預估不足，故不判定優劣</td></tr>
+        </tbody>
+      </table>
+      <p class="small">主要採用來源：TWSE OpenAPI「上市公司綜合損益表(金控業)」。預估 EPS 查核原則：僅採公開、可驗證、同口徑資料；本次未形成可一致採用之公開共識值，因此未填入數字。</p>
+    </section>
+  </div>
+</body>
+</html>

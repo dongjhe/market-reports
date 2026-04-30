@@ -5,25 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>每日市場晨報</title>
   <style>
-    body { font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; margin: 0; background: #0e1628; color: #eef4ff; }
+    :root {
+      --bg: #f8f3ed; --bg-soft: #fdf9f4; --panel: #fffdfa; --line: #efe4d5; --line-strong: #e6d7c4; --text: #2d241b; --muted: #7d6d5f; --gold: #b4874d; --gold-soft: #f7e7cf; --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
+    }
+    body { font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif; margin: 0; background: radial-gradient(circle at top center, rgba(255,255,255,0.92), transparent 30%), linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%); color: var(--text); }
     .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 20px 60px; }
     h1 { font-size: 40px; margin-bottom: 12px; }
-    p { color: #a8b7d8; line-height: 1.8; }
+    p { color: var(--muted); line-height: 1.8; }
     .list { margin-top: 24px; display: grid; gap: 14px; }
-    .item { background: #16233f; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 18px 20px; }
-    .item a { color: #8fd0ff; text-decoration: none; font-size: 18px; font-weight: 800; }
-    .meta { color: #97a8ca; font-size: 14px; margin-top: 6px; }
-    .back { display: inline-block; margin-top: 24px; color: #8fd0ff; text-decoration: none; }
+    .item { background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%); border: 1px solid var(--line-strong); border-radius: 18px; padding: 18px 20px; box-shadow: var(--shadow-soft); }
+    .item a { color: var(--text); text-decoration: none; font-size: 18px; font-weight: 800; }
+    .meta { color: var(--muted); font-size: 14px; margin-top: 6px; }
+    .back { display: inline-block; margin-top: 24px; color: var(--text); text-decoration: none; font-weight: 800; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <h1>每日市場晨報</h1>
-    <p>這裡收錄每日市場晨報 HTML。之後只要新增每日檔案，就能持續累積成歷史晨報清單。</p>
+    <p>這裡收錄每日市場晨報與晨報版型示範。之後可持續補入每日盤前整理，形成完整的歷史晨報清單。</p>
     <div class="list">
       <div class="item">
         <a href="./2026-04-30.html">2026-04-30｜美股盤前晨報｜正式預覽版</a>
-        <div class="meta">目前版本：完整版整合 v3，已包含四格摘要卡、市場溫度儀表板、台股產業連動與七巨頭區塊。</div>
+        <div class="meta">完整版整合 v3，已包含四格摘要卡、市場溫度儀表板、台股產業連動與七巨頭區塊。</div>
       </div>
     </div>
     <a class="back" href="../index.html">← 返回市場報告首頁</a>
