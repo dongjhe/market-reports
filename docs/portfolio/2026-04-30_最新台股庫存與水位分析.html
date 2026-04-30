@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2026-04-30｜最新台股庫存與水位分析</title>
+  <style>
+    :root {
+      --bg: #f8f3ed;
+      --bg-soft: #fdf9f4;
+      --panel: #fffdfa;
+      --panel-2: #fff8f1;
+      --line: #efe4d5;
+      --line-strong: #e6d7c4;
+      --text: #2d241b;
+      --muted: #7d6d5f;
+      --gold: #b4874d;
+      --gold-soft: #f7e7cf;
+      --blue: #5f7aa1;
+      --green: #5c7f52;
+      --red: #a95f57;
+      --shadow: 0 10px 26px rgba(148, 118, 84, 0.08);
+      --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top center, rgba(255,255,255,0.92), transparent 30%), linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
+      color: var(--text);
+      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.8;
+      padding: 18px;
+    }
+    .wrap { max-width: 1240px; margin: 0 auto; }
+    .hero, .section { background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%); border: 1px solid var(--line); border-radius: 30px; box-shadow: var(--shadow); padding: 28px; margin-bottom: 18px; }
+    .badge { display: inline-block; background: var(--gold-soft); color: var(--gold); font-size: 13px; font-weight: 800; padding: 8px 14px; border-radius: 999px; margin-bottom: 14px; }
+    h1 { margin: 0 0 10px; font-size: clamp(30px, 4vw, 42px); }
+    h2 { margin: 0 0 14px; font-size: 28px; }
+    h3 { margin: 0 0 10px; font-size: 18px; }
+    p, li { color: var(--muted); }
+    .grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 16px; margin-top: 18px; }
+    .two-col { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
+    .card { background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%); border: 1px solid var(--line-strong); border-radius: 22px; box-shadow: var(--shadow-soft); padding: 18px; }
+    .main { font-size: 20px; font-weight: 900; color: var(--text); }
+    .sub { font-size: 14px; color: var(--muted); margin-top: 6px; }
+    table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: 14px; }
+    th, td { text-align: left; vertical-align: top; padding: 10px 8px; border-bottom: 1px solid var(--line-strong); }
+    th { color: var(--gold); font-weight: 800; }
+    .callout { background: linear-gradient(180deg, #fffaf3 0%, #fff4e7 100%); border: 1px solid var(--line-strong); border-radius: 20px; padding: 16px 18px; margin-top: 14px; }
+    .strong { color: var(--text); font-weight: 900; }
+    @media (max-width: 900px) { .grid, .two-col { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <section class="hero">
+      <div class="badge">2026-04-30｜最新台股與水位</div>
+      <h1>最新台股庫存與水位分析</h1>
+      <p>這份依你剛剛提供的最新台股庫存與最新風控水位重新整理。結論先講，整體仍然明確處在 <span class="strong">低水位累積期</span>，但台股科技 / 半導體主線已經進一步變厚，所以接下來的重點不只是敢不敢買，而是要控制主線重複與槓桿敏感度。</p>
+      <div class="grid">
+        <div class="card"><div class="main">建議持股</div><div class="sub">64.1%</div></div>
+        <div class="card"><div class="main">目前持股</div><div class="sub">25.4%</div></div>
+        <div class="card"><div class="main">水位狀態</div><div class="sub">仍有明顯累積空間</div></div>
+        <div class="card"><div class="main">目前判斷</div><div class="sub">低水位累積期，非調節主導期</div></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>一、最新台股庫存清單</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>代號</th>
+            <th>名稱</th>
+            <th>股數</th>
+            <th>均價</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>0050</td><td>元大台灣50</td><td>1750</td><td>76.95</td></tr>
+          <tr><td>00830</td><td>國泰費城半導體</td><td>135</td><td>72.36</td></tr>
+          <tr><td>00910</td><td>第一金太空衛星</td><td>1175</td><td>61.18</td></tr>
+          <tr><td>00920</td><td>富邦ESG綠色電力</td><td>815</td><td>25.79</td></tr>
+          <tr><td>00941</td><td>中信上游半導體</td><td>2460</td><td>23.62</td></tr>
+          <tr><td>00988A</td><td>主動統一全球創新</td><td>865</td><td>16.57</td></tr>
+          <tr><td>00631L</td><td>元大台灣50正2</td><td>2000</td><td>29.54</td></tr>
+          <tr><td>1513</td><td>中興電</td><td>140</td><td>150.49</td></tr>
+          <tr><td>2313</td><td>華通</td><td>560</td><td>231.98</td></tr>
+          <tr><td>2330</td><td>台積電</td><td>21</td><td>1866.9</td></tr>
+          <tr><td>2344</td><td>華邦電</td><td>4000</td><td>102.55</td></tr>
+          <tr><td>2881</td><td>富邦金</td><td>235</td><td>88.69</td></tr>
+          <tr><td>2883</td><td>凱基金</td><td>15000</td><td>10.97</td></tr>
+          <tr><td>2886</td><td>兆豐金</td><td>835</td><td>39.55</td></tr>
+          <tr><td>3034</td><td>聯詠</td><td>30</td><td>412.6</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="section">
+      <h2>二、跟前一版相比的變化</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>新增 / 增加的重點</h3>
+          <ul>
+            <li>0050：1700 → <span class="strong">1750</span></li>
+            <li>00830：65 → <span class="strong">135</span></li>
+            <li>00910：1145 → <span class="strong">1175</span></li>
+            <li>00920：660 → <span class="strong">815</span></li>
+            <li>00941：2120 → <span class="strong">2460</span></li>
+            <li>2330：20 → <span class="strong">21</span></li>
+            <li>2881：180 → <span class="strong">235</span></li>
+            <li>2886：685 → <span class="strong">835</span></li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>結構上的代表意義</h3>
+          <ul>
+            <li>台股核心主線被進一步往 <span class="strong">大型指數 + 半導體 + 金融</span> 拉厚。</li>
+            <li>你不是亂加，而是沿著原本熟悉的主線持續累積。</li>
+            <li>但這也表示半導體與科技相關重複度更高了。</li>
+            <li>00631L 仍然是最需要獨立風控管理的敏感部位。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>三、水位判讀</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>現象</h3>
+          <ul>
+            <li>建議持股 64.1%，目前持股 25.4%。</li>
+            <li>代表整體仍遠低於建議配置區間。</li>
+            <li>建議布局金額仍有 260 萬以上空間。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>解讀</h3>
+          <ul>
+            <li>這不是調節主導期，而是仍偏向累積期。</li>
+            <li>現階段最大的錯，不是買太早，而是主線太重複。</li>
+            <li>所以策略不應變成全面保守，而是 <span class="strong">有節奏地買、但不要只往同一主線堆</span>。</li>
+          </ul>
+        </div>
+      </div>
+      <div class="callout"><strong>一句話水位結論：</strong> 現在不是缺現金彈性，而是還有足夠配置空間，因此主軸應該是「持續布局」，但同時把科技主線濃度與槓桿部位敏感度看得更嚴格。</div>
+    </section>
+
+    <section class="section">
+      <h2>四、結構分析</h2>
+      <div class="two-col">
+        <div class="card">
+          <h3>優勢</h3>
+          <ul>
+            <li>0050 + 2330 + 3034 讓核心品質提升。</li>
+            <li>00830、00941 讓半導體主線辨識度很強。</li>
+            <li>2881、2883、2886 提供金融穩定層。</li>
+            <li>00910、00920、00988A 提供題材與區域延伸。</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>風險</h3>
+          <ul>
+            <li>半導體 / 科技 / 槓桿主線重複度繼續升高。</li>
+            <li>00631L 不是錯單，但部位放大後會放大整體體感波動。</li>
+            <li>3034 雖提升品質，但不具分散科技風險效果。</li>
+            <li>若市場突然進入高檔震盪，這套結構波動會先反映在科技主線。</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>五、後續布局順序</h2>
+      <div class="card">
+        <ol>
+          <li>0050</li>
+          <li>2886</li>
+          <li>2881</li>
+          <li>00920</li>
+          <li>2330</li>
+          <li>3034</li>
+          <li>00830 / 00941（二選一或放慢，不宜同步大幅放大）</li>
+          <li>00631L（僅在獨立風控前提下處理）</li>
+        </ol>
+        <p>如果照你熟讀的規則來看，現在最重要的是先看風控，再看位階，再看結構重複度，最後才看故事與情緒。</p>
+      </div>
+      <div class="callout"><strong>最終一句話結論：</strong> 這版最新台股庫存不是過熱，而是仍屬低水位累積期中的主線加厚版；所以接下來不是急著調節，而是要讓新增部位更偏核心、更分散節奏，避免半導體與槓桿一起放大過快。</div>
+    </section>
+  </div>
+</body>
+</html>
