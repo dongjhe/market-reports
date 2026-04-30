@@ -5,77 +5,54 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>市場報告首頁</title>
   <style>
-    :root {
-      --bg: #f8f3ed;
-      --bg-soft: #fdf9f4;
-      --panel: #fffdfa;
-      --panel-2: #fff8f1;
-      --line: #efe4d5;
-      --line-strong: #e6d7c4;
-      --text: #2d241b;
-      --muted: #7d6d5f;
-      --gold: #b4874d;
-      --gold-soft: #f7e7cf;
-      --shadow: 0 10px 26px rgba(148, 118, 84, 0.08);
-      --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
-    }
-    body {
-      font-family: "Noto Sans TC", "Microsoft JhengHei", sans-serif;
-      margin: 0;
-      background: radial-gradient(circle at top center, rgba(255,255,255,0.92), transparent 30%), linear-gradient(180deg, var(--bg-soft) 0%, var(--bg) 100%);
-      color: var(--text);
-    }
-    .wrap { max-width: 1120px; margin: 0 auto; padding: 42px 20px 64px; }
-    .badge { display: inline-block; padding: 8px 14px; border-radius: 999px; background: var(--gold-soft); color: var(--gold); font-weight: 800; font-size: 13px; }
-    h1 { font-size: 42px; margin: 16px 0 12px; }
-    .intro { color: var(--muted); line-height: 1.9; max-width: 840px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; margin-top: 30px; }
-    .card, .update { background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%); border: 1px solid var(--line-strong); border-radius: 24px; padding: 24px; box-shadow: var(--shadow-soft); }
-    .card h2, .update h2 { margin: 0 0 10px; font-size: 24px; }
-    .card p, .update p, li { color: var(--muted); line-height: 1.8; }
-    .card a, .update a { color: var(--text); text-decoration: none; font-weight: 800; }
-    .updates { display: grid; gap: 16px; margin-top: 26px; }
-    ul { margin: 10px 0 0; padding-left: 20px; }
-    .small { margin-top: 34px; font-size: 13px; color: var(--muted); }
+    :root { --bg:#f8f3ed; --bg-soft:#fdf9f4; --panel:#fffdfa; --line-strong:#e6d7c4; --text:#2d241b; --muted:#7d6d5f; --gold:#b4874d; --gold-soft:#f7e7cf; --shadow-soft:0 6px 18px rgba(148,118,84,.05); }
+    body { font-family:"Noto Sans TC","Microsoft JhengHei",sans-serif; margin:0; background:radial-gradient(circle at top center, rgba(255,255,255,.92), transparent 30%), linear-gradient(180deg,var(--bg-soft) 0%,var(--bg) 100%); color:var(--text); }
+    .wrap { max-width:1120px; margin:0 auto; padding:42px 20px 64px; }
+    .badge { display:inline-block; padding:8px 14px; border-radius:999px; background:var(--gold-soft); color:var(--gold); font-weight:800; font-size:13px; }
+    h1 { font-size:42px; margin:16px 0 12px; }
+    .intro { color:var(--muted); line-height:1.9; max-width:840px; }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:18px; margin-top:30px; }
+    .card,.update { background:linear-gradient(180deg,#fffdfa 0%,#fff8f1 100%); border:1px solid var(--line-strong); border-radius:24px; padding:24px; box-shadow:var(--shadow-soft); }
+    .card h2,.update h2 { margin:0 0 10px; font-size:24px; }
+    .card p,.update p,li { color:var(--muted); line-height:1.8; }
+    .card a,.update a { color:var(--text); text-decoration:none; font-weight:800; }
+    .updates { display:grid; gap:16px; margin-top:26px; }
+    ul { margin:10px 0 0; padding-left:20px; }
   </style>
 </head>
 <body>
   <div class="wrap">
     <div class="badge">GitHub Pages 正式整理版</div>
     <h1>市場報告首頁</h1>
-    <p class="intro">這裡集中整理每日市場晨報、台美股庫存分析與每月金控 EPS 報告。之後只要持續新增 HTML 報告，就可以直接透過 GitHub Pages 用網址查看歷史內容。</p>
+    <p class="intro">這裡集中整理每日市場晨報、台股庫存分析與每月金控 EPS 報告。首頁只保留目前 docs 底下實際存在的檔案入口。</p>
     <div class="grid">
       <div class="card">
         <h2>每日市場晨報</h2>
-        <p>收錄每日晨報、晨報新版版型與盤前重點整理。</p>
+        <p>收錄目前已上站的晨報頁面。</p>
         <a href="./morning-news/index.html">開啟晨報清單</a>
       </div>
       <div class="card">
         <h2>庫存分析</h2>
-        <p>收錄台股、美股、合併總復盤與策略性報告。</p>
+        <p>收錄目前已上站的台股庫存分析頁面。</p>
         <a href="./portfolio/index.html">開啟庫存分析清單</a>
       </div>
       <div class="card">
         <h2>每月金控 EPS</h2>
-        <p>收錄金控 EPS 追蹤與月份更新報告。</p>
+        <p>收錄目前已上站的每月金控 EPS 追蹤頁面。</p>
         <a href="./monthly-eps/index.html">開啟 EPS 清單</a>
       </div>
     </div>
     <div class="updates">
       <div class="update">
-        <h2>最新更新</h2>
+        <h2>目前可直接開啟的最新檔案</h2>
         <ul>
           <li><a href="./morning-news/2026-04-30.html">2026-04-30｜美股盤前晨報｜正式預覽版</a></li>
-          <li><a href="./portfolio/2026-04-28_最新台美股庫存與水位復盤.html">2026-04-28｜最新台美股庫存與水位復盤</a></li>
-          <li><a href="./monthly-eps/2026-04-20_每月金控EPS追蹤.html">2026-04-20｜每月金控 EPS 追蹤</a></li>
+          <li><a href="./portfolio/2026-04-30_最新台股庫存與水位分析.html">2026-04-30｜最新台股庫存與水位分析</a></li>
+          <li><a href="./portfolio/2026-04-30_最新台美股庫存分析_奶油色版.html">2026-04-30｜最新台美股庫存分析｜奶油色版</a></li>
+          <li><a href="./monthly-eps/2026-04-30_每月金控EPS追蹤.html">2026-04-30｜每月金控 EPS 追蹤</a></li>
         </ul>
       </div>
-      <div class="update">
-        <h2>使用方式</h2>
-        <p>首頁先看最新更新，再依需求進入晨報、庫存分析或 EPS 專區。未來若有更多報告，只要新增檔案並把連結補進 index，就能持續擴充。</p>
-      </div>
     </div>
-    <div class="small">建議 GitHub repository：market-reports，Pages 設定使用 main /docs。</div>
   </div>
 </body>
 </html>
