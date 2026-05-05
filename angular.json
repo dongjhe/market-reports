@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "market-reports": {
+    "PersonalStockMarketAnalysis": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -58,10 +58,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "market-reports:build:production"
+              "buildTarget": "PersonalStockMarketAnalysis:build:production"
             },
             "development": {
-              "buildTarget": "market-reports:build:development"
+              "buildTarget": "PersonalStockMarketAnalysis:build:development"
             }
           },
           "defaultConfiguration": "development"
