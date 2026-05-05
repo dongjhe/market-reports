@@ -1,0 +1,124 @@
+:root {
+  --bg: #f8f3ed;
+  --bg-soft: #fdf9f4;
+  --panel: #fffdfa;
+  --line-strong: #e6d7c4;
+  --text: #2d241b;
+  --muted: #7d6d5f;
+  --gold: #b4874d;
+  --gold-soft: #f7e7cf;
+  --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
+}
+
+:host {
+  display: block;
+  font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;
+}
+
+.wrap {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 42px 20px 64px;
+}
+
+.badge {
+  display: inline-block;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: var(--gold-soft);
+  color: var(--gold);
+  font-weight: 800;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 42px;
+  margin: 16px 0 12px;
+  color: var(--text);
+}
+
+.intro {
+  color: var(--muted);
+  line-height: 1.9;
+  max-width: 840px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+  margin-top: 30px;
+}
+
+.card {
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%);
+  border: 1px solid var(--line-strong);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.card h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: var(--text);
+}
+
+.card p,
+.card a {
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.card a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+  display: block;
+  margin-top: 12px;
+}
+
+.card a:hover {
+  color: var(--gold);
+}
+
+.updates {
+  display: grid;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.update {
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%);
+  border: 1px solid var(--line-strong);
+  border-radius: 24px;
+  padding: 24px;
+  box-shadow: var(--shadow-soft);
+}
+
+.update h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: var(--text);
+}
+
+.update ul {
+  margin: 10px 0 0;
+  padding-left: 20px;
+}
+
+.update li {
+  color: var(--muted);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.update a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.update a:hover {
+  color: var(--gold);
+}

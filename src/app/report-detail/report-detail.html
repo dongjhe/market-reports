@@ -1,0 +1,42 @@
+@if (report(); as item) {
+  <div class="wrap">
+    <div class="eyebrow">{{ item.category }}</div>
+    <h1>{{ item.title }}</h1>
+    <p class="summary">{{ item.summary }}</p>
+
+    <div class="metrics" aria-label="報告摘要指標">
+      @for (metric of item.metrics; track metric.label) {
+        <div class="metric">
+          <span>{{ metric.label }}</span>
+          <strong>{{ metric.value }}</strong>
+        </div>
+      }
+    </div>
+
+    <section class="panel">
+      <h2>重點整理</h2>
+      <ul>
+        @for (highlight of item.highlights; track highlight) {
+          <li>{{ highlight }}</li>
+        }
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>頁面狀態</h2>
+      <p>
+        此頁已改為 Angular Router 頁面。從清單點擊時會留在同一個 app 內導頁，部署到 GitHub Pages
+        後會使用 hash route 顯示。
+      </p>
+    </section>
+
+    <a class="back" [routerLink]="item.sectionPath">返回{{ item.category }}清單</a>
+  </div>
+} @else {
+  <div class="wrap">
+    <div class="eyebrow">找不到報告</div>
+    <h1>這個報告路徑尚未建立</h1>
+    <p class="summary">請回到首頁或清單頁重新選擇目前已串接的報告入口。</p>
+    <a class="back" routerLink="/home">返回市場報告首頁</a>
+  </div>
+}
