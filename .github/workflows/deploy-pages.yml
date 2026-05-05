@@ -5,7 +5,13 @@ on:
     branches:
       - main
       - codex-router-github-pages
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
+
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 permissions:
   contents: read
@@ -43,9 +49,11 @@ jobs:
         run: npm run build:pages
 
       - name: Configure GitHub Pages
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: actions/upload-pages-artifact@v5
         with:
           path: docs
@@ -53,6 +61,7 @@ jobs:
 
   deploy:
     name: Deploy to GitHub Pages
+    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
     needs: build
     runs-on: ubuntu-latest
     environment:
