@@ -1,19 +1,21 @@
 <div class="wrap">
   <h1>庫存分析</h1>
-  <p>
-    這裡只保留目前 docs/portfolio 底下實際存在的分析檔案，並另外新增「價值區 /
-    升溫區布局分析」專區。
-  </p>
+  <p>{{ intro }}</p>
 
   <div class="group">
-    <div class="section-card">
-      <div class="badge">一般庫存分析</div>
-      <div class="card">
-        <a routerLink="/portfolio/2026-05-01-combined">2026-05-01｜最新台美股合併總庫存頁</a>
-        <div class="meta">整合最新台股與美股庫存，統一看整體結構、風險與後續布局順序。</div>
+    @for (group of reportGroups; track group.label) {
+      <div class="section-card">
+        <div class="badge">{{ group.label }}</div>
+
+        @for (report of group.reports; track report.path) {
+          <div class="card">
+            <a [routerLink]="report.path">{{ report.date }}｜{{ report.title }}</a>
+            <div class="meta">{{ report.summary }}</div>
+          </div>
+        }
       </div>
-    </div>
+    }
   </div>
 
-  <a class="back" routerLink="/">← 返回市場報告首頁</a>
+  <a class="back" routerLink="/" replaceUrl>← 返回市場報告首頁</a>
 </div>

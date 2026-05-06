@@ -1,11 +1,16 @@
 <nav class="navbar">
   <div class="navbar-content">
-    <div class="navbar-title" routerLink="/">市場報告</div>
+    <div class="navbar-title" routerLink="/" replaceUrl>市場報告</div>
     <ul class="navbar-nav">
       <li>
-        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
-          >首頁</a
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          [routerLinkActiveOptions]="{ exact: true }"
+          replaceUrl
         >
+          首頁
+        </a>
       </li>
       <li><a routerLink="/morning-news" routerLinkActive="active">晨報</a></li>
       <li><a routerLink="/portfolio" routerLinkActive="active">庫存分析</a></li>
