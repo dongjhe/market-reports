@@ -1,9 +1,15 @@
 <div class="wrap">
   <h1>每月金控 EPS</h1>
-  <p>這裡只保留目前 docs/monthly-eps 底下實際存在的追蹤檔案。</p>
-  <div class="card">
-    <a routerLink="/monthly-eps/2026-04-30">2026-04-30｜每月金控 EPS 追蹤</a>
-    <div class="meta">最新正式版，含凱基金、富邦金、兆豐金三大重點追蹤區塊。</div>
+  <p>{{ intro }}</p>
+
+  <div class="list">
+    @for (report of reports; track report.path) {
+      <div class="card">
+        <a [routerLink]="report.path">{{ report.date }}｜{{ report.title }}</a>
+        <div class="meta">{{ report.summary }}</div>
+      </div>
+    }
   </div>
+
   <a class="back" routerLink="/" replaceUrl>← 返回市場報告首頁</a>
 </div>

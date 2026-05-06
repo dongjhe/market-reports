@@ -1,0 +1,30 @@
+<div class="wrap">
+  <div class="eyebrow">{{ category }}</div>
+  <h1>{{ title }}</h1>
+  <p class="summary">{{ summary }}</p>
+
+  <div class="metrics" aria-label="報告摘要指標">
+    @for (metric of metrics; track metric.label) {
+      <div class="metric">
+        <span>{{ metric.label }}</span>
+        <strong>{{ metric.value }}</strong>
+      </div>
+    }
+  </div>
+
+  <section class="panel">
+    <h2>重點整理</h2>
+    <ul>
+      @for (highlight of highlights; track highlight) {
+        <li>{{ highlight }}</li>
+      }
+    </ul>
+  </section>
+
+  <section class="panel">
+    <h2>頁面狀態</h2>
+    <p>此頁已移到 monthly-eps/report-detail 資料夾，清單入口由 monthly-eps.ts 動態渲染。</p>
+  </section>
+
+  <a class="back" [routerLink]="sectionPath">返回{{ category }}清單</a>
+</div>

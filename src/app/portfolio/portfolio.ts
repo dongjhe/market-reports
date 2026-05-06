@@ -33,12 +33,6 @@ export class Portfolio {
           path: '/portfolio/ark-inventory-water-level-20260505',
           summary: '完整整合桌面 HTML 報告，保留台美股庫存總覽、水位判斷與分批布局節奏。',
         },
-        {
-          title: '最新台美股合併總庫存頁',
-          date: '2026-05-01',
-          path: '/portfolio/2026-05-01-combined',
-          summary: '整合最新台股與美股庫存，統一看整體結構、風險與後續布局順序。',
-        },
       ],
     },
   ];
