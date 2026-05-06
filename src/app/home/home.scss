@@ -85,7 +85,7 @@ h1 {
 .updates {
   display: grid;
   gap: 16px;
-  margin-top: 26px;
+  margin-top: 40px;
 }
 
 .update {
@@ -110,7 +110,7 @@ h1 {
 .update li {
   color: var(--muted);
   line-height: 1.8;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
 }
 
 .update a {
@@ -121,4 +121,29 @@ h1 {
 
 .update a:hover {
   color: var(--gold);
+}
+
+@media (max-width: 640px) {
+  .wrap {
+    padding: 28px 14px 56px;
+  }
+
+  h1 {
+    font-size: 34px;
+  }
+
+  .grid {
+    gap: 14px;
+    margin-top: 22px;
+  }
+
+  .updates {
+    margin-top: 34px;
+  }
+
+  .card,
+  .update {
+    padding: 20px;
+    border-radius: 20px;
+  }
 }
