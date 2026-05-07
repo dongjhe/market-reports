@@ -27,7 +27,13 @@ export class Stocks {
       label: '一般庫存分析',
       reports: [
         {
-          title: '2026-05-07｜台積電 (2330) 產業策略白皮書',
+          title: 'BKSY BlackSky 產業策略白皮書',
+          date: '2026-05-07',
+          path: '/stocks/bksy-industry-whitepaper-20260507',
+          summary: '依最新 Q1 2026 財報、新合約、Gen-3 衛星、國防 ISR 需求與股價波動製作。',
+        },
+        {
+          title: '台積電 (2330) 產業策略白皮書',
           date: '2026-05-07',
           path: '/stocks/2330-tsmc-industry-whitepaper-20260507',
           summary: '依最新股價、近三年財報、AI 需求、先進製程與方舟庫存框架製作。',
