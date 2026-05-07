@@ -2,9 +2,7 @@
   min-height: 100vh;
   padding: 32px;
   color: #172033;
-  background:
-    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 34%),
-    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+  background: #fff7e8;
 }
 
 .breadcrumb,
@@ -31,7 +29,7 @@
   margin: 20px auto;
   border: 1px solid rgba(148, 163, 184, 0.28);
   border-radius: 24px;
-  background: rgba(255, 255, 255, 0.9);
+  background: #fffaf0;
   box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
 }
 
@@ -73,7 +71,7 @@ h1 {
   padding: 18px;
   border: 1px solid #dbe3ef;
   border-radius: 18px;
-  background: #f8fafc;
+  background: #fff3dc;
 }
 
 .meta-grid span,
@@ -133,7 +131,7 @@ ol > li {
   margin: 24px auto 0;
   padding: 14px 18px;
   border-radius: 999px;
-  background: #ffffff;
+  background: #fffaf0;
   box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
 }
 
