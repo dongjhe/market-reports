@@ -1,10 +1,11 @@
 :root {
   --bg: #f8f3ed;
   --bg-soft: #fdf9f4;
-  --panel: #fffdfa;
   --line-strong: #e6d7c4;
   --text: #2d241b;
   --muted: #7d6d5f;
+  --gold: #b4874d;
+  --gold-soft: #f7e7cf;
   --shadow-soft: 0 6px 18px rgba(148, 118, 84, 0.05);
 }
 
@@ -30,35 +31,54 @@ p {
   line-height: 1.8;
 }
 
-.list {
+.group {
   margin-top: 24px;
-  display: grid;
-  gap: 14px;
 }
 
-.item {
+.section-card {
+  background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%);
+  border: 1px solid var(--line-strong);
+  border-radius: 22px;
+  padding: 20px;
+  margin-bottom: 18px;
+  box-shadow: var(--shadow-soft);
+}
+
+.card {
   background: linear-gradient(180deg, #fffdfa 0%, #fff8f1 100%);
   border: 1px solid var(--line-strong);
   border-radius: 18px;
   padding: 18px 20px;
+  margin-bottom: 14px;
   box-shadow: var(--shadow-soft);
 }
 
-.item a {
+.card a {
   color: var(--text);
   text-decoration: none;
   font-size: 18px;
   font-weight: 800;
 }
 
-.item a:hover {
-  color: #b4874d;
+.card a:hover {
+  color: var(--gold);
 }
 
 .meta {
   color: var(--muted);
   font-size: 14px;
   margin-top: 6px;
+}
+
+.badge {
+  display: inline-block;
+  background: var(--gold-soft);
+  color: var(--gold);
+  font-size: 12px;
+  font-weight: 800;
+  padding: 6px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
 }
 
 .back {
@@ -70,5 +90,5 @@ p {
 }
 
 .back:hover {
-  color: #b4874d;
+  color: var(--gold);
 }
