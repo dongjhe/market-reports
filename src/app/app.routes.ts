@@ -12,6 +12,7 @@ import { ReportDetail } from './report-detail/report-detail';
 import { Stocks } from './stocks/stocks';
 import { TsmcIndustryWhitepaper20260507 } from './stocks/report-detail/2330-tsmc-industry-whitepaper-20260507/2330-tsmc-industry-whitepaper-20260507';
 import { BksyIndustryWhitepaper20260507 } from './stocks/report-detail/bksy-industry-whitepaper-20260507/bksy-industry-whitepaper-20260507';
+import { TslaIndustryWhitepaper20260507 } from './stocks/report-detail/tsla-industry-whitepaper-20260507/tsla-industry-whitepaper-20260507';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -37,6 +38,10 @@ export const routes: Routes = [
   { path: 'monthly-eps/2026-04-30', component: MonthlyEps20260430 },
   { path: 'monthly-eps/:slug', component: ReportDetail },
   { path: 'stocks', component: Stocks },
+  {
+    path: 'stocks/tsla-industry-whitepaper-20260507',
+    component: TslaIndustryWhitepaper20260507,
+  },
   {
     path: 'stocks/bksy-industry-whitepaper-20260507',
     component: BksyIndustryWhitepaper20260507,

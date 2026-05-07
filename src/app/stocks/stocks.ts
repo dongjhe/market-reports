@@ -27,6 +27,12 @@ export class Stocks {
       label: '一般庫存分析',
       reports: [
         {
+          title: 'TSLA Tesla 產業策略白皮書',
+          date: '2026-05-07',
+          path: '/stocks/tsla-industry-whitepaper-20260507',
+          summary: '依最新股價、近三年財報、電動車競爭、能源儲能、FSD 與 Robotaxi 選擇權製作。',
+        },
+        {
           title: 'BKSY BlackSky 產業策略白皮書',
           date: '2026-05-07',
           path: '/stocks/bksy-industry-whitepaper-20260507',
