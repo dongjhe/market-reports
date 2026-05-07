@@ -29,6 +29,12 @@ export class Portfolio {
       reports: [
         {
           title: '方舟複盤｜台美股庫存與水位分析',
+          date: '2026-05-07',
+          path: '/portfolio/ark-inventory-water-level-20260507',
+          summary: '依最新台美股庫存截圖更新水位、部位差異、風控與分批加碼順序。',
+        },
+        {
+          title: '方舟複盤｜台美股庫存與水位分析',
           date: '2026-05-06',
           path: '/portfolio/ark-inventory-water-level-20260506',
           summary: '依最新台美股庫存與最新財經資訊更新判斷依據，整理水位、主線配置與操作節奏。',
