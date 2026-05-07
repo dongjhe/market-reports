@@ -15,16 +15,16 @@
 }
 
 .breadcrumb {
-  display: inline-flex;
+  display: flex;
   gap: 8px;
   align-items: center;
-  margin-bottom: 18px;
-  padding: 8px 12px;
-  border: 1px solid var(--line-strong);
-  border-radius: 999px;
-  background: rgba(247, 231, 207, 0.55);
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto 12px;
+  padding: 0;
   color: var(--muted);
   font-size: 14px;
+  text-align: left;
   text-decoration: none;
 }
 
