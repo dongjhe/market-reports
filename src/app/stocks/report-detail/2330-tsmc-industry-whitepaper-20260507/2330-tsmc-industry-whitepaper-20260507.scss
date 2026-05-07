@@ -1,0 +1,156 @@
+.whitepaper {
+  min-height: 100vh;
+  padding: 32px;
+  color: #172033;
+  background:
+    radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 34%),
+    linear-gradient(180deg, #f8fafc 0%, #eef2f7 100%);
+}
+
+.breadcrumb,
+.back {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  color: #475569;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.breadcrumb a,
+.back {
+  color: #1d4ed8;
+  font-weight: 700;
+}
+
+.hero,
+.summary,
+.sections section,
+.sources {
+  max-width: 1120px;
+  margin: 20px auto;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 18px 50px rgba(15, 23, 42, 0.08);
+}
+
+.hero {
+  padding: 36px;
+}
+
+.eyebrow {
+  margin: 0 0 10px;
+  color: #1d4ed8;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+}
+
+h1 {
+  margin: 0;
+  color: #0f172a;
+  font-size: clamp(30px, 5vw, 52px);
+  line-height: 1.08;
+}
+
+.subtitle {
+  max-width: 920px;
+  margin: 18px 0 0;
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.meta-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.meta-grid div {
+  padding: 18px;
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.meta-grid span,
+.meta-grid small {
+  display: block;
+  color: #64748b;
+}
+
+.meta-grid strong {
+  display: block;
+  margin: 8px 0;
+  color: #0f172a;
+  font-size: 22px;
+}
+
+.summary,
+.sections section,
+.sources {
+  padding: 30px 34px;
+}
+
+h2 {
+  margin: 0 0 18px;
+  color: #0f172a;
+  font-size: 26px;
+}
+
+h3 {
+  margin: 0 0 8px;
+  color: #1e293b;
+  font-size: 19px;
+}
+
+p,
+li {
+  color: #334155;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding-left: 22px;
+}
+
+ol > li {
+  margin: 18px 0;
+}
+
+.sources li {
+  margin: 8px 0;
+}
+
+.back {
+  max-width: 1120px;
+  margin: 24px auto 0;
+  padding: 14px 18px;
+  border-radius: 999px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+@media (max-width: 860px) {
+  .whitepaper {
+    padding: 18px;
+  }
+
+  .meta-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero,
+  .summary,
+  .sections section,
+  .sources {
+    padding: 24px;
+    border-radius: 18px;
+  }
+}
