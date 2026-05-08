@@ -7,6 +7,7 @@ import { MorningNews20260430 } from './morning-news/report-detail/2026-04-30/mor
 import { ArkInventoryWaterLevel20260505 } from './portfolio/report-detail/ark-inventory-water-level-20260505/ark-inventory-water-level-20260505';
 import { ArkInventoryWaterLevel20260506 } from './portfolio/report-detail/ark-inventory-water-level-20260506/ark-inventory-water-level-20260506';
 import { ArkInventoryWaterLevel20260507 } from './portfolio/report-detail/ark-inventory-water-level-20260507/ark-inventory-water-level-20260507';
+import { ArkInventoryWaterLevel20260508 } from './portfolio/report-detail/ark-inventory-water-level-20260508/ark-inventory-water-level-20260508';
 import { Portfolio } from './portfolio/portfolio';
 import { ReportDetail } from './report-detail/report-detail';
 import { Stocks } from './stocks/stocks';
@@ -21,6 +22,10 @@ export const routes: Routes = [
   { path: 'morning-news/2026-04-30', component: MorningNews20260430 },
   { path: 'morning-news/:slug', component: ReportDetail },
   { path: 'portfolio', component: Portfolio },
+  {
+    path: 'portfolio/ark-inventory-water-level-20260508',
+    component: ArkInventoryWaterLevel20260508,
+  },
   {
     path: 'portfolio/ark-inventory-water-level-20260507',
     component: ArkInventoryWaterLevel20260507,
