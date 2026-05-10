@@ -27,6 +27,12 @@ export class Stocks {
       label: '一般庫存分析',
       reports: [
         {
+          title: '聯詠 (4916) 產業策略白皮書',
+          date: '2026-05-10',
+          path: '/stocks/4916-novatek-industry-whitepaper-20260510',
+          summary: '依最新股價、Q1 2026 財報、4 月營收、三年財務趨勢與顯示驅動 IC 復甦狀況製作。',
+        },
+        {
           title: 'TSLA Tesla 產業策略白皮書',
           date: '2026-05-07',
           path: '/stocks/tsla-industry-whitepaper-20260507',

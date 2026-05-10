@@ -14,6 +14,7 @@ import { Stocks } from './stocks/stocks';
 import { TsmcIndustryWhitepaper20260507 } from './stocks/report-detail/2330-tsmc-industry-whitepaper-20260507/2330-tsmc-industry-whitepaper-20260507';
 import { BksyIndustryWhitepaper20260507 } from './stocks/report-detail/bksy-industry-whitepaper-20260507/bksy-industry-whitepaper-20260507';
 import { TslaIndustryWhitepaper20260507 } from './stocks/report-detail/tsla-industry-whitepaper-20260507/tsla-industry-whitepaper-20260507';
+import { NovatekIndustryWhitepaper20260510 } from './stocks/report-detail/4916-novatek-industry-whitepaper-20260510/4916-novatek-industry-whitepaper-20260510';
 
 export const routes: Routes = [
   { path: '', component: Home },
@@ -54,6 +55,10 @@ export const routes: Routes = [
   {
     path: 'stocks/2330-tsmc-industry-whitepaper-20260507',
     component: TsmcIndustryWhitepaper20260507,
+  },
+  {
+    path: 'stocks/4916-novatek-industry-whitepaper-20260510',
+    component: NovatekIndustryWhitepaper20260510,
   },
   { path: 'stocks/:slug', component: ReportDetail },
   { path: '**', redirectTo: '' },
