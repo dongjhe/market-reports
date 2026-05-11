@@ -27,6 +27,13 @@ export class Stocks {
       label: '一般庫存分析',
       reports: [
         {
+          title: 'CEG Constellation Energy 產業策略白皮書',
+          date: '2026-05-11',
+          path: '/stocks/ceg-industry-whitepaper-20260511',
+          summary:
+            '依最新股價、Q1 2026 8-K、2025 年報、Calpine 整合、資料中心需求與核能基載優勢製作。',
+        },
+        {
           title: '聯詠 (4916) 產業策略白皮書',
           date: '2026-05-10',
           path: '/stocks/4916-novatek-industry-whitepaper-20260510',
