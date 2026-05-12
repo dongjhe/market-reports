@@ -29,6 +29,13 @@ export class Portfolio {
       reports: [
         {
           title: '方舟複盤｜台美股庫存與水位分析',
+          date: '2026-05-12',
+          path: '/portfolio/ark-inventory-water-level-20260512',
+          summary:
+            '依東東最新台美股清單截圖整理，更新 22.83% 持股水位、62.1% 建議水位、部位結構與前日差異。',
+        },
+        {
+          title: '方舟複盤｜台美股庫存與水位分析',
           date: '2026-05-11',
           path: '/portfolio/ark-inventory-water-level-20260511',
           summary:
